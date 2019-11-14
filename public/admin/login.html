@@ -16,11 +16,11 @@
       </div> -->
       <div class="form-group">
         <label for="email" class="sr-only">邮箱</label>
-        <input id="email" type="email" class="form-control" placeholder="邮箱" autofocus>
+        <input id="email" type="email" value="itheima@itcast.cn" class="form-control" placeholder="邮箱" autofocus>
       </div>
       <div class="form-group">
         <label for="password" class="sr-only">密码</label>
-        <input id="password" type="password" class="form-control" placeholder="密码">
+        <input id="password" value="123456" type="password" class="form-control" placeholder="密码">
       </div>
       <button class="btn btn-primary btn-block" id="loginBtn">登 录</button>
     </div>
@@ -48,6 +48,7 @@
       success:function(response){
        // console.log(response);
        location.href='index.html' 
+     //  location.replace='index.html' 没有历史记录的跳转 没有返回键
       },
       error:function(){
         alert('邮箱或者密码错误')
